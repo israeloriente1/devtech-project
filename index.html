@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- 
+    Arquivo inicial desafio Pagina DevTech (HTML e CSS)
+    > www.devmentor.com.br
+  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Carregando a fonte roboto para usar no projeto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Carregando a biblioteca Feather para usar icons -->
+  <!-- Ver a lista com nome dos icones: https://feathericons.com/ -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <title>DevTech - Desafio DevMentor BR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+      <nav>
+        <a href="./index.html"><img src="./assets/logo.png" alt="dev tech logo"></a>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+      </nav>
+      <hr>
+      <section id="haederTitle">
+          <article>
+            <h1>Sua empresa merece reconhecimento e visibilidade!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque odio hic ullam dignissimos voluptatum facilis iste vel non est veniam, sit assumenda aut. Explicabo commodi quia ipsam debitis esse</p>
+            <button class="button">Solicitar orçamento</button>
+          </article>
+          <img src="./assets/empresa.png" alt="empresa img">
+      </section>
+  </header>
+
+  <main>
+      <section>
+        <article>
+          <h2>2 mil</h2>
+          <p>Usuários online</p>
+        </article>
+
+        <article>
+          <h2>15 mil</h2>
+          <p>Já usaram nosso sistema</p>
+        </article>
+
+        <article>
+          <h2>700+</h2>
+          <p>Desafios online</p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h2>Levamos a sua empresa a outro nível</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid dolor id dignissimos debitis, voluptatum consequatur. Maxime harum est nulla sed, ipsa ea illo suscipit obcaecati, excepturi natus deserunt cupiditate.</p>
+          <button class="button">Fazer orçamento</button>
+        </article>
+
+        <div class="cardsContainer">
+          <div>
+              <!-- logo -->
+              <h3>Fazemos toda gestão de marketing.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat nostrum dolores expedita nobis iure voluptate, labore eveniet officiis in nemo harum voluptatibus, dolore ipsum ullam inventore iste.</p>
+          </div>
+          <div>
+              <!-- logo -->
+              <h3>Gerenciamos todo trafego pago.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat nostrum dolores expedita nobis iure voluptate, labore eveniet officiis in nemo harum voluptatibus, dolore ipsum ullam inventore iste.</p>
+          </div>
+        </div>
+      </section>
+
+      <article>
+        <h2>Sobre</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptatum voluptates voluptatem ullam ut enim facilis nihil incidunt eos, vitae ab sit quos qui similique ad provident necessitatibus error. Impedit!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores similique rerum eum provident iste exercitationem sit? Officia consequatur laudantium veritatis dolorum. Quod consectetur expedita quidem magni ipsum asperiores eius velit.</p>
+      </article>
+
+      <section>
+          <h2>Vamos fazer um orçamento?</h2>
+          <p>Fique tranquilo, nosso orçamento é gratuito e sem nenhum compromisso.</p>
+
+          <form action="#" method="get">
+            <input type="text" name="userName" id="userName" placeholder="Digite seu nome" pattern="[a-z\s]+" required>
+            <input type="email" name="userEmail" id="userEmail" placeholder="Digite seu email" required>
+            <input type="tel" name="userNumber" id="userNumber" placeholder="Telefone (DD) 99999-9999" pattern="\([0-9]{2}\) 9[0-9]{4}-[0-9]{4}" required>
+            <input type="submit" class="button" value="Solicitar orçamento">
+          </form>
+      </section>
+  </main>
+  
+  <footer>
+    <p>todos os direitos reservados @2022 - DevMentor</p>
+  </footer>
+
+  <!-- Exemplo abaixo: como usar um icone da biblioteca Feather -->
+  <div class="demo">
+    <h1>Desafio DevMentor</h1>
+    <i class="icon" data-feather="unlock"></i>
+  </div>
+
+  
+  <!-- Biblioteca Feather para usar icons -->
+  <script>
+    feather.replace();
+  </script>
+   <!-- Biblioteca Feather para usar icons -->
+</body>
+</html>
