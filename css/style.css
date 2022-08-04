@@ -1,0 +1,34 @@
+/* Aplicando reset no CSS e aplicando fonte padrão */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  --fontFamily: 'Inter', sans-serif;
+
+  --color1: #000000;
+  --color2: #353535;
+  --color3: #151F35;
+  --color4: #248DE9;
+  --color5: #0C78D7, #439DEC, #0C78D7;
+  --color6: #FFFFFF;
+  --color7: #F6F7F9;
+  --color8: #F6F7F9;
+  --color9: #DEDEDE;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.demo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Exemplo abaixo como estilizar um icone */
+.icon{
+  color: #248DE9;
+  width: 30px;
+  height: 30px;
+}
