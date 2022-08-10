@@ -19,31 +19,38 @@
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
   <title>DevTech - Desafio DevMentor BR</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
 
   <header>
-      <nav>
-        <a href="./index.html"><img src="./assets/logo.png" alt="dev tech logo"></a>
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Serviços</a>
-        <a href="#">Contato</a>
-      </nav>
-      <hr>
-      <section id="haederTitle">
-          <article>
-            <h1>Sua empresa merece reconhecimento e visibilidade!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque odio hic ullam dignissimos voluptatum facilis iste vel non est veniam, sit assumenda aut. Explicabo commodi quia ipsam debitis esse</p>
-            <button class="button">Solicitar orçamento</button>
-          </article>
-          <img src="./assets/empresa.png" alt="empresa img">
-      </section>
+      <div id="headerContainer">
+        <nav>
+          <i class="icon" data-feather="menu" id="mobileMenu"></i>
+          <a href="./index.html"><img src="./assets/logo.png" alt="dev tech logo"></a>
+          <div>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+          </div>
+        </nav>
+        
+        <section id="headerTitle">
+            <article>
+              <h1>Sua empresa merece reconhecimento e visibilidade!</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque odio hic ullam dignissimos voluptatum facilis iste vel non est veniam, sit assumenda aut. Explicabo commodi quia ipsam debitis esse</p>
+              <button class="button">Solicitar orçamento</button>
+            </article>
+            <img src="./assets/empresa.png" alt="empresa img">
+        </section>
+      </div>
   </header>
 
   <main>
-      <section>
+      <section id="datas">
         <article>
           <h2>2 mil</h2>
           <p>Usuários online</p>
@@ -59,61 +66,66 @@
           <p>Desafios online</p>
         </article>
       </section>
+      
+      <section id="info">
+        <div class="container">
+          <article>
+            <h2>Levamos a sua empresa a outro nível</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid dolor id dignissimos debitis, voluptatum consequatur. Maxime harum est nulla sed, ipsa e deserunt cupiditate.</p>
+            <button class="button">Fazer orçamento</button>
+          </article>
 
-      <section>
-        <article>
-          <h2>Levamos a sua empresa a outro nível</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid dolor id dignissimos debitis, voluptatum consequatur. Maxime harum est nulla sed, ipsa ea illo suscipit obcaecati, excepturi natus deserunt cupiditate.</p>
-          <button class="button">Fazer orçamento</button>
-        </article>
-
-        <div class="cardsContainer">
-          <div>
-              <!-- logo -->
-              <h3>Fazemos toda gestão de marketing.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat nostrum dolores expedita nobis iure voluptate, labore eveniet officiis in nemo harum voluptatibus, dolore ipsum ullam inventore iste.</p>
-          </div>
-          <div>
-              <!-- logo -->
-              <h3>Gerenciamos todo trafego pago.</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat nostrum dolores expedita nobis iure voluptate, labore eveniet officiis in nemo harum voluptatibus, dolore ipsum ullam inventore iste.</p>
+          <div class="cardsContainer">
+            <div class="card blueGradient">
+                <div class="cardLogo">
+                  <i class="icon" data-feather="trending-up"></i>
+                </div>
+                <h3>Fazemos toda gestão de marketing.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat nostrum dolores.</p>
+            </div>
+            <div class="card whiteGradient">
+                <div class="cardLogo">
+                  <i class="icon" data-feather="briefcase"></i>
+                </div>
+                <h3>Gerenciamos todo trafego pago.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat nostrum dolores.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <article>
-        <h2>Sobre</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptatum voluptates voluptatem ullam ut enim facilis nihil incidunt eos, vitae ab sit quos qui similique ad provident necessitatibus error. Impedit!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores similique rerum eum provident iste exercitationem sit? Officia consequatur laudantium veritatis dolorum. Quod consectetur expedita quidem magni ipsum asperiores eius velit.</p>
-      </article>
+      <section id="about">
+        <div class="container">
+          <h2>Sobre</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptatum voluptates voluptatem ullam ut enim facilis nihil incidunt eos, vitae ab sit quos qui similique ad provident necessitatibus error. Impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat beatae itaque, eligendi quis ipsam exercitationem, molestiae sint unde, delectus veritatis minus odit eius explicabo nulla illum labore quia natus earum!</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores similique rerum eum provident iste exercitationem sit? Officia consequatur laudantium veritatis dolorum. Quod consectetur expedita quidem magni ipsum asperiores eius velit.</p>
+        </div>
+      </section>
 
-      <section>
-          <h2>Vamos fazer um orçamento?</h2>
-          <p>Fique tranquilo, nosso orçamento é gratuito e sem nenhum compromisso.</p>
-
-          <form action="#" method="get">
-            <input type="text" name="userName" id="userName" placeholder="Digite seu nome" pattern="[a-z\s]+" required>
-            <input type="email" name="userEmail" id="userEmail" placeholder="Digite seu email" required>
-            <input type="tel" name="userNumber" id="userNumber" placeholder="Telefone (DD) 99999-9999" pattern="\([0-9]{2}\) 9[0-9]{4}-[0-9]{4}" required>
-            <input type="submit" class="button" value="Solicitar orçamento">
-          </form>
+      <section id="userForm">
+          <div class="container">
+            <h2>Vamos fazer um orçamento?</h2>
+            <p>Fique tranquilo, nosso orçamento é gratuito e sem nenhum compromisso.</p>
+            <form action="#" method="get" onsubmit="prevent(event)">
+              <input type="text" name="userName" id="userName" placeholder="Digite seu nome" pattern="[a-zA-Z\s]+" required>
+              <input type="email" name="userEmail" id="userEmail" placeholder="Digite seu email" required>
+              <input type="tel" name="userNumber" id="userNumber" placeholder="Telefone (DD) 99999-9999" pattern="\([0-9]{2}\) 9[0-9]{4}-[0-9]{4}" maxlength="15" required>
+              <input type="submit" class="button" value="Solicitar orçamento">
+            </form>
+          </div>
       </section>
   </main>
   
   <footer>
-    <p>todos os direitos reservados @2022 - DevMentor</p>
+    <p>Todos os direitos reservados @2022 - DevMentor</p>
   </footer>
-
-  <!-- Exemplo abaixo: como usar um icone da biblioteca Feather -->
-  <div class="demo">
-    <h1>Desafio DevMentor</h1>
-    <i class="icon" data-feather="unlock"></i>
-  </div>
-
-  
   <!-- Biblioteca Feather para usar icons -->
   <script>
     feather.replace();
+
+    function prevent(event) {
+      event.preventDefault();
+    }
   </script>
    <!-- Biblioteca Feather para usar icons -->
 </body>
