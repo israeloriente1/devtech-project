@@ -92,3 +92,87 @@ header div#headerContainer nav div {
 #headerTitle button {
     margin-top: 30px;
 }
+
+@media (max-width: 1091px) {
+    #headerTitle article h1 {
+        font-size: 34px;
+    }
+
+    #headerTitle article {
+        max-width: 355px;
+    }
+
+    #headerTitle img {
+        height: 290px;
+    }
+}
+
+@media (max-width: 949px) { /* tablets layout */
+    #headerTitle article h1 {
+        font-size: 27px;
+        line-height: 50.01px;
+    }
+
+    #headerTitle article {
+        max-width: 307px;
+    }
+}
+
+@media (max-width: 880px) { /* tablets layout */
+    header {
+        padding-bottom: 45px;
+    }
+
+    #headerTitle {
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    #headerTitle article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #headerTitle article p {
+        display: none;
+    }
+
+    #headerTitle button {
+        margin-top: 0px;
+    }
+
+    #headerTitle img {
+        margin-top: 40px;
+        height: 327px;
+    }
+}
+
+@media (max-width: 779px) { /* tablets layout */ 
+    header div#headerContainer nav div {
+        display: none;
+    }
+
+    header div nav a {
+        margin: auto;
+    }
+
+    header nav #mobileMenu {
+        visibility: visible;
+        opacity: 100;
+    }
+
+    header nav::after {
+        display: none;
+    }
+}
+
+@media (max-width: 625px) { /* mobile layout */
+    header {
+        padding: 0px 30px 30px 30px;
+    }    
+
+    #headerTitle img {
+        height: 230px;
+    }
+}

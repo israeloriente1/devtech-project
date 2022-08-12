@@ -99,13 +99,12 @@ section#datas {
   display: flex;
   justify-content: center;
   gap: 142px;
-  padding: 20px 0px;
+  padding: 20px 90px;
 }
 
 section#datas article {
   text-align: center;
   padding: 30px 0px;
-  flex-shrink: 0;
 }
 
 section#datas article h2 {
@@ -192,4 +191,172 @@ section#userForm form input:last-child {
 section#userForm input[type="submit"] {
   width: 430px;
   border: none
+}
+
+@media (max-width: 1268px) { /* desktop layout */
+  /* main */
+  main h2 {
+    font-size: 28px;
+    line-height: 43px;
+  }
+
+  /* id info */
+  section#info article {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1123px) { /* desktop layout */
+
+  section#info article {
+    margin-top: 65px
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-right: 40px;
+    align-items: center;
+  }
+
+  .card {
+    display: grid;
+    width: 380px;
+    height: 200px;
+    gap: 0px 25px;
+  }
+
+  .cardLogo {
+    width: 59px;
+    height: 59px;
+    margin: auto;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  div.cardsContainer > div.card > h3 {
+    margin-bottom: 0;
+    grid-column-start: 2;
+  }
+
+  div.cardsContainer > div.card > p {
+    grid-area: 2;
+  }
+
+  section#info div.container {
+    padding: 100px 50px 80px 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  section#info div.container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#info article{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .cardsContainer {
+    flex-direction: row;
+    max-width: 500px;
+    margin-right: 0px;
+  }
+
+  .card {
+    display: block;
+    width: 272px;
+    height: 280px;
+    gap: 0px;
+  }
+
+  .cardLogo {
+    width: 59px;
+    height: 59px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 885px) { /* tablets layout */
+
+  /* id datas */
+
+  section#datas {
+    padding: 20px 30px;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  /* id info */
+
+  .cardsContainer {
+    margin-right: 0;
+  }
+
+  .card {
+    width: 335px;
+  }
+
+  div.cardsContainer > div.card > h3 {
+    font-size: 17px;
+  }
+
+  div.cardsContainer > div.card > p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) { /* mobile layout */
+  
+  /* id datas */
+
+  section#datas {
+    flex-direction: column;
+  }
+
+  /* id info */
+
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 272px;
+  }
+
+  /* id userForm */
+
+  section#userForm div h2 {
+    font-size: 21px;
+    padding: 0px 15px;
+  }
+
+  section#userForm div.container p {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  section#userForm div h2 {
+    font-size: 27px;
+  }
+
+  section#userForm form {
+    width: 87vw;
+  }
+
+  section#userForm input, section#userForm input[type="submit"] {
+    width: 70%;
+  }
+
+  /* id about */
+
+  section#about div.container {
+    padding: 50px 30px;
+  }
 }
